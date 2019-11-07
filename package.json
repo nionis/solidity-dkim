@@ -1,0 +1,27 @@
+{
+  "name": "solidity-dkim",
+  "version": "1.0.0",
+  "description": "Verify DKIM signatures in solidity.",
+  "scripts": {
+    "compile": "truffle compile",
+    "dev": "truffle develop",
+    "test": "truffle test",
+    "migrate": "truffle migrate"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@ensdomains/buffer": "0.0.10",
+    "dkim": "^0.7.0",
+    "dkim-key": "^1.3.0",
+    "dkim-signature": "^1.3.0",
+    "jshashes": "^1.0.7",
+    "node-rsa": "^1.0.6"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.0.24",
+    "chai": "^4.2.0",
+    "eth-gas-reporter": "^0.2.12",
+    "openzeppelin-test-helpers": "^0.5.1",
+    "truffle": "^5.0.43"
+  }
+}

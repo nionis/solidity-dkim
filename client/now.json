@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "dkim-oracle-demo",
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "routes": [{ "src": "^/api/(.*)", "dest": "/api/$1.js" }],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
