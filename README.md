@@ -60,7 +60,7 @@ $ npm run dev
 
 ## Next steps
 
-- The goal of this project is to provide the necessary primitives for DKIM verification in an unopinioned way. This is why we only verify what is required and we don't perform any parsing on-chain. The next step is to build a `login` method within `Service.sol` that parses a given `body` and performs a "login".
+- The goal of this project is to provide the necessary primitives for DKIM verification in an unopinioned way. This is why we only verify what is required and we don't perform any parsing on-chain. The next step is to build a `login` method within `Service.sol`.
 
 ## Contributions to open-sourced projects
 
