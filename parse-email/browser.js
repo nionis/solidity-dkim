@@ -16,6 +16,14 @@ const main = email => {
         .pop()
         .toUpperCase();
 
+      const bodyHashMatched =
+        new Hashes[algorithm]().hex(dkim.processedBody) ===
+        dkim.signature.hash.toString("hex");
+
+      if (!bodyHashMatched) {
+        return reject("body hash did not verify");
+      }
+
       const hash = new Hashes[algorithm]().hex(dkim.processedHeader);
 
       return {
