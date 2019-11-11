@@ -5,12 +5,12 @@ A Solidity library to efficiently verify [DKIM signatures](https://tools.ietf.or
 - Supports `rsa-sha1` and `rsa-sha256` signature algorithms
 - Implements both canonicalization algorithms (`simple`, `relaxed`)
 - Gas costs less than 100 thousand
-- Includes email parser & demo website
+- Includes email parser library & demo website
 - Tested on Gmail, iCloud, Outlook, Protonmail and Yahoo
 
 ## How it works
 
-The goal is to verify DKIM signatures using solidity in a secure and economical way.
+The goal is to verify DKIM signatures using solidity in a secure, private and economical way.
 
 We achieve that by parsing the raw email off-chain in the user's client, and then running the verification on-chain.
 This ensures that the email gets securely verified while keeping gas costs low.
